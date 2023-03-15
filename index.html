@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        form {
+            /* background-color: white; */
+            background-image: linear-gradient(to right, rgb(255, 255, 255) 95%, rgb(27, 111, 238) 0);
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 38rem;
+        }
+        
+        h2 {
+            color: rgb(27, 111, 238);
+            padding-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        #container {
+            /* margin: 0 3rem; */
+            padding-left: 3rem;
+            width: 30rem;
+        }
+        
+        #div-user {
+            
+        }
+
+        #div-password {
+            margin-top: 1rem;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+
+        input[type="text"], input[type="password"] {
+            background-color: rgb(219, 219, 219);
+            border: none;
+            width: 100%;
+            height: 2.5rem;
+            border-radius: 0.3rem;
+            outline: none;
+            font-size: 1.25rem;
+        }
+
+        #rem-container {
+            margin-top: 2rem;
+        }
+
+        button {
+            background-color: rgb(27, 111, 238);
+            border: none;
+            color: white;
+            width: 100%;
+            height: 2.5rem;
+            box-sizing: content-box;
+            cursor: pointer;
+        }
+
+        #button-container {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        a {
+            /* margin-left: 19.5rem; */
+            text-decoration: none;
+            color: rgb(27, 111, 238);
+            float: right;
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div id="container">
+            <h2>ACCOUNT LOGIN</h2>
+            <div id="div-user">
+                <label>USERNAME</label>
+                <input type="text">
+            </div>
+            <div id="div-password">
+                <label>PASSWORD</label>
+                <input type="password">
+            </div>
+            <div id="rem-container">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div  id="button-container">
+                <button>LOG IN</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
